@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary prediction</title>
+    <h1>Salary Prediction</h1>
+
+</head>
+
+    
+    <div class="container-i">
+        <form action="{{url_for('predict')}}" class="form-i" method="post">
+            <h3>Enter Your Experience</h3>
+            <input type="number" name="YearsExperience" placeholder="enter the years of experience:"><br>
+            <br>
+
+            <!--submit Button-->
+            <input type="submit" value="predict" class="submit">
+        </form>
+        <h5>predicted salary is :{{prediction}}</h5>
+        
+    </div>
+    <style>
+        body{
+            text-align: center;
+            background-color: white;
+            background-image: url('../static/86297.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+    
+        
+    </style>
+    
+</body>
+</html>
